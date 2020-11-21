@@ -11,70 +11,70 @@
         android:id="@+id/imageView3"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_cellep_tech" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
+        android:id="@+id/edtLoginEmail"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/colorText"
+        android:backgroundTint="@android:color/white"
         android:ems="10"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
-        android:textColor="@color/colorText"
-        android:textColorHint="@color/colorText"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="match_parent"
+        android:id="@+id/edtLoginSenha"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/colorText"
+        android:backgroundTint="@android:color/white"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
-        android:textColorHint="@color/colorText"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginEmail" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_constraints"
+        android:id="@+id/btnLoginEntrar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
-        android:text="ENTRAR"
+        android:text="Entrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginSenha" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnLoginCadastrar"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Cadastrar"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/btnLoginEntrar"
+        app:layout_constraintStart_toStartOf="@+id/btnLoginEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginEntrar" />
+
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView4"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"
@@ -82,4 +82,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/logo_estacao_hack" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
